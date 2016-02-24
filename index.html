@@ -5,15 +5,15 @@
 
 
 function bar(obj){
-  var str = obj.options[obj.selectedIndex].value;
-  document.write(str);
+  var str = eval(obj.options[obj.selectedIndex].value);
+  document.getElementById('a').write(str);
   console.log(str);
 }
 
 </script>
 </head>
 <body>
-
+<h1 id="a"></h1>
 <select name="name" onChange="bar(this);">
 <option value='SURFPOINT.getContinentCode()'>コード取得(大陸)</option>
 <option value='SURFPOINT.getCountryCode()'>コード取得(国)</option>
@@ -70,7 +70,6 @@ function bar(obj){
 <option value='SURFPOINT.getPrefCF()'>都道府県CF値取得</option>
 <option value='SURFPOINT.getCityCF()'>市区町村CF値取得</option>
 <option value='SURFPOINT.getLineCF()'>回線CF値取得</option>
-
 </select>
 
 
