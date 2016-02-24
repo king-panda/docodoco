@@ -2,15 +2,75 @@
 <head>
 <script type="text/javascript" src="http://api.docodoco.jp/v5/docodoco?key=gBN7WimBAAmJXv8Niww3WHJHn29wAl8qjGHx7jHIeD0B25r6SjVLAXunJCJO7swD" charset="utf-8"></script>
 <script>
-var PrefJName = SURFPOINT.getPrefJName(),//日本語表記取得	大阪
-    PrefLatitude = SURFPOINT.getPrefLatitude(),//緯度取得	34.68705
-    PrefLongitude = SURFPOINT.getPrefLongitude() //経度取得	135.51925
 
-    document.write(PrefJName+'<br />'+PrefLatitude+'<br />'+PrefLongitude);
+
+function bar(0bj){
+  var str = Obj.options[Obj.selectedIndex].value;
+  document.write(str);
+}
+
 </script>
 </head>
 <body>
 
+<select name="name" onChange="bar(this)">
+<option value='SURFPOINT.getContinentCode()'>コード取得(大陸)</option>
+<option value='SURFPOINT.getCountryCode()'>コード取得(国)</option>
+<option value='SURFPOINT.getCountryAName()'>英語表記取得</option>
+<option value='SURFPOINT.getCountryJName()'>日本語表記取得</option>
+<option value='SURFPOINT.getRegionCode()'>コード取得(地方)</option>
+<option value='SURFPOINT.getPrefCode()'>コード取得(都道府県)</option>
+<option value='SURFPOINT.getPrefAName()'>ローマ字表記取得</option>
+<option value='SURFPOINT.getPrefJName()'>日本語表記取得</option>
+<option value='SURFPOINT.getPrefLatitude()'>緯度取得</option>
+<option value='SURFPOINT.getPrefLongitude()'>経度取得</option>
+<option value='SURFPOINT.getCityCode()'>コード取得(市区町村)</option>
+<option value='SURFPOINT.getCityAName()'>ローマ字表記取得</option>
+<option value='SURFPOINT.getCityJName()'>日本語表記取得</option>
+<option value='SURFPOINT.getCityLatitude()'>緯度取得</option>
+<option value='SURFPOINT.getCityLongitude()'>経度取得</option>
+<option value='SURFPOINT.getBCFlag()'>企業フラグ取得</option>
+<option value='SURFPOINT.getOrgCode()'>コード取得(企業)</option>
+<option value='SURFPOINT.getOrgOfficeCode()'>本支店フラグ取得</option>
+<option value='SURFPOINT.getOrgIndependentCode()'>自営業フラグ取得</option>
+<option value='SURFPOINT.getOrgName()'>企業名取得</option>
+<option value='SURFPOINT.getOrgPrefCode()'>コード取得(都道府県)</option>
+<option value='SURFPOINT.getOrgCityCode()'>コード取得(市区町村)</option>
+<option value='SURFPOINT.getOrgLatitude()'>緯度取得</option>
+<option value='SURFPOINT.getOrgLongitude()'>経度取得</option>
+<option value='SURFPOINT.getOrgZipCode()'>郵便番号取得</option>
+<option value='SURFPOINT.getOrgAddress()'>住所取得</option>
+<option value='SURFPOINT.getOrgTel()'>電話番号取得</option>
+<option value='SURFPOINT.getOrgFax()'>FAX番号取得</option>
+<option value='SURFPOINT.getOrgIpoType()'>上場区分フラグ取得</option>
+<option value='SURFPOINT.getStockTickerNumber()'>証券コード取得</option>
+<option value='SURFPOINT.getOrgDate()'>設立年月日取得</option>
+<option value='SURFPOINT.getOrgCapitalCode()'>資本金コード取得</option>
+<option value='SURFPOINT.getOrgEmployeesCode()'>従業員数コード取得</option>
+<option value='SURFPOINT.getOrgGrossCode()'>売上高コード取得</option>
+<option value='SURFPOINT.getOrgPresident()'>代表者名取得</option>
+<option value='SURFPOINT.getOrgIndustrialCategoryL()'>業種大分類取得</option>
+<option value='SURFPOINT.getOrgIndustrialCategoryM()'>業種中分類取得</option>
+<option value='SURFPOINT.getOrgIndustrialCategoryS()'>業種小分類取得</option>
+<option value='SURFPOINT.getOrgIndustrialCategoryT()'>業種細分類取得</option>
+<option value='SURFPOINT.getOrgUrl()'>WEBサイトアドレス取得</option>
+<option value='SURFPOINT.getOrgDomainName()'>ドメイン名取得（組織データに基づく）</option>
+<option value='SURFPOINT.getDomainType()'>ドメインタイプ取得（IPデータに基づく）</option>
+<option value='SURFPOINT.getOrgEnglishName()'>組織 社名・屋号英語表記</option>
+<option value='SURFPOINT.getOrgEnglishAddress()'>組織 住所英語表記</option>
+<option value='SURFPOINT.getIP()'>IPアドレス取得</option>
+<option value='SURFPOINT.getLineCode()'>回線コード取得</option>
+<option value='SURFPOINT.getLineJName()'>回線日本語表記取得</option>
+<option value='SURFPOINT.getTimeZone()'>タイムゾーン</option>
+<option value='SURFPOINT.getTelCode()'>市外局番取得（組織データに基づく）</option>
+<option value='SURFPOINT.getDomainName()'>ドメイン名取得（IPに基づく）</option>
+<option value='SURFPOINT.getProxyFlag()'>プロキシ判定取得</option>
+<option value='SURFPOINT.getEncryptedIP()'>IPアドレスを暗号化した文字列</option>
+<option value='SURFPOINT.getPrefCF()'>都道府県CF値取得</option>
+<option value='SURFPOINT.getCityCF()'>市区町村CF値取得</option>
+<option value='SURFPOINT.getLineCF()'>回線CF値取得</option>
+
+</select>
 
 
 </body>
