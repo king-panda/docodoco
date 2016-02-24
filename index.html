@@ -4,16 +4,17 @@
 <script>
 
 
-function bar(0bj){
-  var str = Obj.options[Obj.selectedIndex].value;
+function bar(obj){
+  var str = obj.options[obj.selectedIndex].value;
   document.write(str);
+  console.log(str);
 }
 
 </script>
 </head>
 <body>
 
-<select name="name" onChange="bar(this)">
+<select name="name" onChange="bar(this);">
 <option value='SURFPOINT.getContinentCode()'>コード取得(大陸)</option>
 <option value='SURFPOINT.getCountryCode()'>コード取得(国)</option>
 <option value='SURFPOINT.getCountryAName()'>英語表記取得</option>
