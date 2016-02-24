@@ -7,7 +7,7 @@
 function bar(obj){
   var str = eval(obj.options[obj.selectedIndex].value);
   var h = document.getElementById("txt");
-  if(str == ''){
+  if(str == null){
     h.innerHTML = 'データ無し';
   }else{
     h.innerHTML = str;
